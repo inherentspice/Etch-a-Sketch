@@ -6,8 +6,9 @@
 }
 
 :root {
-  --color-primary: #566dc0;
-  --color-secondary: #39dd7e;
+  --color-primary: rgba(164,17,108,255);
+  --color-secondary: rgb(123,150,105,255);
+  --color-tertiary: rgba(233,156,78,255);
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -26,12 +27,36 @@ body {
   font-size: 1.1rem;
   color: var(--color-white);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background: url('images/etch-background.jpg');
+  background-size: auto;
+  gap: 20px;
+  height: 100vh;
+  width: min-content;
+  margin: auto;
 }
+
+.header {
+  display: flex;
+  justify-self: left;
+  margin: 0;
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  border: 5px solid var(--color-secondary);
+  width:max-content;
+  padding: 15px;
+  flex-direction: column;
+
+}
+
+h1 {
+  font-size: 164px;
+}
+
 
 main {
   justify-content: center;
-  height: 100vh;
   align-items: center;
   display: flex;
 }
@@ -45,4 +70,12 @@ main {
 
 .art {
   flex: 1 0 12%;
+}
+
+button {
+  background-color: var(--color-secondary);
+  color: var(--color-tertiary);
+  font-weight: 800;
+  font-size: 28px;
+  border: 5px solid var(--color-primary);
 }

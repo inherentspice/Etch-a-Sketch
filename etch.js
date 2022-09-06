@@ -1,4 +1,4 @@
-for (let i = 100; i > 0; i--) {
+for (let i = 200; i > 0; i--) {
   let containerDiv = document.getElementById('container');
   let newDiv = document.createElement('div');
   newDiv.className = 'art';
